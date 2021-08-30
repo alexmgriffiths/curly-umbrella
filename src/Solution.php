@@ -30,6 +30,7 @@ namespace Src;
 
 class Solution {
 
+    //This variable only needs to be initialized because it's value is set when the class is initialized
     private int $requiredSolutionCount;
 
     //Initialize the class with a default of 10 required solutions
@@ -47,7 +48,8 @@ class Solution {
         $this->requiredSolutionCount = $newValue;
     }
 
-    public function findSolutions() {
+    //Find the solutions based on the amount of solutions required
+    public function findSolutions() : array {
         //Initialize an empty solutions array
         $solutions = [];
 
@@ -79,5 +81,5 @@ $solution = new Solution();
 $solutions = $solution->findSolutions();
 
 foreach($solutions as $solution) {
-    echo $solution . "\n";
+    echo $solution . ", ";
 }
