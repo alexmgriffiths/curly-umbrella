@@ -74,3 +74,10 @@ class Solution {
     }
 
 }
+
+$solution = new Solution();
+$solutions = $solution->findSolutions();
+
+foreach($solutions as $solution) {
+    echo $solution . "\n";
+}
