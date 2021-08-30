@@ -30,7 +30,7 @@ namespace Src;
 
 class Solution {
 
-    //This variable only needs to be initialized because it's value is set when the class is initialized
+    //This variable only needs to be initialized because its value is set when the class is initialized
     private int $requiredSolutionCount;
 
     //Initialize the class with a default of 10 required solutions
